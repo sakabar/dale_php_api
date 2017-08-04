@@ -22,7 +22,7 @@ class CreateBadMoveTable extends Migration
             $table->string('sfen');
             $table->string('flipped_sfen');
             $table->string('actual_move');
-            $table->string('pv');
+            $table->text('pv');
             $table->timestamps();
             $table->increments('id');
         });
