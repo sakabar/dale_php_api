@@ -80,7 +80,7 @@ class BadMoveController extends Controller
      */
     public function show($id)
     {
-        return [\App\BadMove::find($id)];
+        return json_encode([\App\BadMove::find($id)], JSON_UNESCAPED_UNICODE);
     }
 
     /**
