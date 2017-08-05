@@ -13,4 +13,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::resource('bad_moves', 'BadMoveController', ['only' => ['store', 'show']]);
+Route::resource('bad_moves', 'BadMoveController', ['only' => ['show']]);
